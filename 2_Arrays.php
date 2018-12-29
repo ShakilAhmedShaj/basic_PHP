@@ -1,38 +1,20 @@
 <?php
 
 
-//Indexed
+ /* First method to associate create array. */
+ $salaries = array("mohammad" => 2000, "qadir" => 1000, "zara" => 500);
+         
+ echo "Salary of mohammad is ". $salaries['mohammad'] . "<br />";
+ echo "Salary of qadir is ".  $salaries['qadir']. "<br />";
+ echo "Salary of zara is ".  $salaries['zara']. "<br />";
+ 
+ /* Second method to create array. */
+ $salaries['mohammad'] = "high";
+ $salaries['qadir'] = "medium";
+ $salaries['zara'] = "low";
 
-$people = array('Rahim','Karim','Abul');
-
-$ids = array(10,20,30,40);
-
-$cars = ['Honda','Toyota','Ford'];
-
-$cars[3] = 'BMW';
-$cars[] = 'Walton';
-
-
-echo $people[0];
-echo $people[1];
-echo $people[2];
-
-echo $ids[0];
-echo $cars[4];
-
-echo count($cars);
-
-print_r($cars);
-var_dump($cars);
-
-
-
-
-
-
-
-
-
-
+ echo "Salary of mohammad is ". $salaries['mohammad'] . "<br />";
+ echo "Salary of qadir is ".  $salaries['qadir']. "<br />";
+ echo "Salary of zara is ".  $salaries['zara']. "<br />";
 
 ?>
