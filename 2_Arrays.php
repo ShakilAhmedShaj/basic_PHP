@@ -1,20 +1,17 @@
 <?php
 
 
- /* First method to associate create array. */
- $salaries = array("mohammad" => 2000, "qadir" => 1000, "zara" => 500);
-         
- echo "Salary of mohammad is ". $salaries['mohammad'] . "<br />";
- echo "Salary of qadir is ".  $salaries['qadir']. "<br />";
- echo "Salary of zara is ".  $salaries['zara']. "<br />";
- 
- /* Second method to create array. */
- $salaries['mohammad'] = "high";
- $salaries['qadir'] = "medium";
- $salaries['zara'] = "low";
+$cars = array
+(
+array("Volvo",22,18),
+array("BMW",15,13),
+array("Saab",5,2),
+array("Land Rover",17,15)
+);
 
- echo "Salary of mohammad is ". $salaries['mohammad'] . "<br />";
- echo "Salary of qadir is ".  $salaries['qadir']. "<br />";
- echo "Salary of zara is ".  $salaries['zara']. "<br />";
+echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
+echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
+echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
+echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
 
 ?>
