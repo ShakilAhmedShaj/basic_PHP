@@ -1,29 +1,64 @@
 <?php
+	# LOOPS - Execute code set number of times
 
+	/*
+		For
+		While
+		Do..While
+		Foreach
+	*/
 
-$x = 1;
+	# For Loop
+	# @params - init, condition, inc
 
-while ($x <= 5) {
-    echo "The number is: $x <br>";
-    $x++;
-}
+	/*
+	for($i = 5;$i <= 10;$i++){
+		echo 'Number '.$i;
+		echo '<br>';
+	}
+	*/
 
-for ($x = 0; $x <= 10; $x++) {
-    echo "The number is: $x <br>";
-}
+	# While Loop
+	# @params - condition
 
+	/*
+	$i = 0;
 
-$i = 0;
-$num = 0;
+	while($i < 10){
+		echo $i;
+		echo '<br>';
+		$i++;
+	}
+	*/
 
-do {
-    $i++;
-} while ($i < 10);
-echo ("Loop stopped at i = $i");
+	# Do...While
+	# @params - condition
+	/*
+	$i = 0;
 
-$array = array(1, 2, 3, 4, 5);
+	do{
+		echo $i;
+		echo '<br>';
+		$i++;
+	}
 
-foreach ($array as $value) {
-    echo "Value is $value <br />";
-}
+	while($i < 10);
+	*/
+
+	# Foreach Loop - For arrays
+	/*
+	$people = array('Brad', 'Jose', 'William');
+
+	foreach($people as $person){
+		echo $person;
+		echo '<br>';
+	}
+	*/
+
+	$people = array('Brad' => 'brad@gmail.com', 'Jose' => 'jose@gmail.com', 'William' => 'will@gmail.com');
+
+	foreach($people as $person => $email){
+		echo $person.': '.$email;
+		echo '<br>';
+	}
 ?>

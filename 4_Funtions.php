@@ -1,28 +1,53 @@
 <?php
-function addFunction($num1, $num2)
-{
-    $sum = $num1 + $num2;
-    echo "Sum of the two numbers is : $sum";
-}
+	# FUNCTION - Block of code that can be repeatedly called
 
-addFunction(10, 20);
+	/*
+		Camel Case - myFunction()
+		Lower Case - my_function()
+		Pascal Case - MyFunction()
+	*/
 
+	// Create Simple Function
+	function simpleFunction(){
+		echo 'Hello World';
+	}
 
-function addFive($num)
-{
-    $num += 5;
-}
+	// Run Simple Function
+	//simpleFunction();
 
-function addSix(&$num)
-{
-    $num += 6;
-}
+	// Function With Param
+	function sayHello($name = 'World'){
+		echo "Hello $name<br>";
+	}
 
-$orignum = 10;
-addFive($orignum);
+	//sayHello('Joe');
+	//sayHello('Bob');
+	//sayHello('Tim');
 
-echo "Original Value is $orignum<br />";
+	// Return Value
+	function addNumbers($num1, $num2){
+		return $num1 + $num2;
+	}
 
-addSix($orignum);
-echo "Original Value is $orignum<br />";
+	//echo addNumbers(2,3);
+
+	// By Reference
+
+	$myNum = 10;
+
+	function addFive($num){
+		$num += 5;
+	}
+
+	function addTen(&$num){
+		$num += 10;
+	}
+
+	addFive($myNum);
+
+	echo "Value: $myNum<br>";
+
+	addTen($myNum);
+
+	echo "Value: $myNum<br>";
 ?>

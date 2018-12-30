@@ -1,17 +1,43 @@
 <?php
+	#Array - Variable that holds multiple values
+	/*
+		- Indexed
+		- Associative
+		- Multi-dimensional
+	*/
 
+	// Indexed
+	$people = array('Kevin', 'Jeremy', 'Sara');
+	$ids = array(23, 55, 12);
+	$cars = ['Honda', 'Toyota', 'Ford'];
+	$cars[3] = 'Chevy';
+	$cars[] = 'BMW';
 
-$cars = array
-(
-array("Volvo",22,18),
-array("BMW",15,13),
-array("Saab",5,2),
-array("Land Rover",17,15)
-);
+	//echo count($cars);
+	//print_r($cars);
+	//var_dump($cars);
 
-echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
-echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
-echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
-echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
+	//echo $people[3];
+	//echo $ids[2];
+	//echo $cars[4];
 
+	// Associative arrays
+	$people = array('Brad' => 35, 'Jose' => 32, 'William' => 37);
+	$ids = [22 => 'Brad', 44 => 'Jose', 63 => 'William'];
+
+	//echo $people['Brad'];
+	//echo $ids[22];
+	$people['Jill'] = 42;
+	//echo $people['Jill'];
+	//print_r($people);
+	//var_dump($people);
+
+	//Multi-Dimensional
+	$cars = array(
+		array('Honda', 20, 10),
+		array('Toyota', 30, 20),
+		array('Ford', 23, 12)
+	);
+
+	echo $cars[1][2];
 ?>

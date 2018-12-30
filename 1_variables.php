@@ -1,30 +1,48 @@
 <?php
+	// Single line comment
+	# Single line comment
+	/*
+		Multiline
+		comment
+	*/
 
-$num1 = 20;
-$num2 = 30;
-$sum = $num1 + $num2;
+	#VARIABLES
+	/*
+		- Prefix $
+		- Start with a letter or an underscore
+		- Only letters, numbers and underscores
+		- Case sensitive
+	*/
 
-$str1 = 'Hello';
-$str2 = 'SHAJ';
-$str3 = 'They\'re Here';
-$str4 = "They're Here";
+	#DATA TYPES
+	/*
+		String
+		Integers
+		floats
+		Booleans
+		Arrays
+		Objects
+		NULL
+		Resource
+	*/
 
-$greet = $str1.' '.$str2.'!';
+	$output = 'Hello World!';
 
-$greet2 = "$str1 $str2";
+	$num1 = 4;
+	$num2 = 10;
+	$sum = $num1 + $num2;
 
-define('GREETING','HELLO EVERYONE');
-// define('GREETING','HELLO EVERYONE', true);
+	$string1 = 'Hello';
+	$string2 = 'World';
+	$greeting = $string1 .' '. $string2.'!';
+	$greeting2 = "$string1 $string2";
 
+	$string3 = "They\"re Here";
 
+	$float1 = 4.4;
+	$bool1 = true;
 
+	define('GREETING', 'Hello Everyone', true);
 
-echo $sum;
-echo $greet;
-echo $greet2;
-echo $str3;
-echo $str4;
-echo GREETING;
-
-
+	echo greeting;
 ?>
