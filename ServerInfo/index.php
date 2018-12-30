@@ -28,7 +28,7 @@
         <?php endif; ?>
 
 
-        <h1>Server & File Info</h1>
+        <h1>Client Info</h1>
 
         <?php if ($client) : ?>
             <ul class="list-group">
