@@ -9,8 +9,16 @@ if (filter_has_var(INPUT_POST,'data')) {
 */
 
 if (filter_has_var(INPUT_POST,'data')) {
+
+    $email = $_POST['data'];
+
+//Remove illegal chars
+
+$email = filter_var($email,FILTER_SANITIZE_EMAIL);
+echo $email.'<br>';
+
    
-    if (filter_input(INPUT_POST,'data',FILTER_VALIDATE_EMAIL)) {
+    if (filter_var($email,FILTER_VALIDATE_EMAIL)) {
         echo 'Email is Valid';
     }
     else {
